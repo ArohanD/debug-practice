@@ -14,7 +14,7 @@
 // Output: "255[.]100[.]50[.]0"
 
 var defangIPaddr = function(address) {
-  return address.split('').map(char => char === '.' ? '[.]' : char)
+  return address.split('').map(char => char === '.' ? '[.]' : char).join('')
 };
 
 console.log(defangIPaddr("1.1.1.1"))

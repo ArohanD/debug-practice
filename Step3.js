@@ -30,7 +30,7 @@ const maximumSwap = (num)  => {
       }
   }
 
-  recurse(digitArray);
+  recurse(digitArray.slice());
   return Number(digitArray.map((el) => el.toString()).join(''))
 }
 

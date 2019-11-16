@@ -16,9 +16,9 @@ const topKFrequent = (nums, k) => {
   })
   let arrayTrack = Object.entries(tracker).sort((a, b) => b[1] - a[1])
   console.log(arrayTrack)
-  let returnArray;
-  for (let i = 0; i <= k; i++){
-    returnArray.push(arrayTrack[i][0])
+  let returnArray = [];
+  for (let i = 0; i < k; i++){
+    returnArray.push(Number(arrayTrack[i][0]))
   }
   return returnArray;
 };
